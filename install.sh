@@ -43,5 +43,11 @@ echo ""
 echo "-----------------------------------"
 echo "Install K3D ..."
 curl -s https://raw.githubusercontent.com/rancher/k3d/main/install.sh | bash
-k3d cluster create mycluster
+# k3d cluster create mycluster
 echo "Install K3D ... succesfull"
+
+# Install Angular CLI
+npm install -g @angular/cli
+
+# Create default dir
+mkdir ~/workspace/repos
