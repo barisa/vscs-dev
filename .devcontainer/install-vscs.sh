@@ -3,6 +3,9 @@
 echo "Running as ..."
 id -u -n
 
+echo "Current pwd ..."
+pwd
+
 # Install Linux Tools
 sudo apt-get -y install htop less chromium
 export CHROME_BIN=/usr/bin/chromium-browser
