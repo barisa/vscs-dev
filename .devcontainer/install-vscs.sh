@@ -21,15 +21,16 @@ echo "Install SDK MAN ..."
 
 curl -s "https://get.sdkman.io" | bash
 #sh ./home/codespace/.sdkman/bin/sdkman-init.sh
-export SDKMAN_DIR="/home/codespace/.sdkman"
-[[ -s "/home/codespace/.sdkman/bin/sdkman-init.sh" ]] && source "/home/codespace/.sdkman/bin/sdkman-init.sh"
+source ${HOME}/.bashrc
+source ${HOME}/.profile
+source ${HOME}/.zshrc
 echo "Install SDK MAN ... succesfull"
 
 # Install JDK 11
 echo ""
 echo "-----------------------------------"
 echo "Install JDK 11 ..."
-sdk install java 11.0.8.hs-adpt
+sudo sdk install java 11.0.8.hs-adpt
 echo "Install JDK 11 ... succesfull"
 
 # Install Docker-Compose
