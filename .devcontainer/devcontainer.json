@@ -29,7 +29,7 @@
 	27017 // MongoDB
 	],
 	// Use 'postCreateCommand' to run commands after the container is created.
-	//"postCreateCommand": "bash .devcontainer/install-vscs.sh
+	//"postCreateCommand": "sh .devcontainer/install-vscs.sh"
 	// Uncomment to connect as a non-root user. See https://aka.ms/vscode-remote/containers/non-root.
 	"remoteUser": "vscode"
 }
