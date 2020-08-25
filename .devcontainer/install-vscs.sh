@@ -20,7 +20,9 @@ echo "-----------------------------------"
 echo "Install SDK MAN ..."
 
 curl -s "https://get.sdkman.io" | bash
-sh ./home/codespace/.sdkman/bin/sdkman-init.sh
+#sh ./home/codespace/.sdkman/bin/sdkman-init.sh
+export SDKMAN_DIR="/home/codespace/.sdkman"
+[[ -s "/home/codespace/.sdkman/bin/sdkman-init.sh" ]] && source "/home/codespace/.sdkman/bin/sdkman-init.sh"
 echo "Install SDK MAN ... succesfull"
 
 # Install JDK 11
