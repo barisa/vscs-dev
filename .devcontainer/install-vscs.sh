@@ -20,7 +20,7 @@ echo "Install SDK MAN ... succesfull"
 echo ""
 echo "-----------------------------------"
 echo "Install JDK 11 ..."
-sudo source "/home/codespace/.sdkman/bin/sdkman-init.sh"
+source "/home/codespace/.sdkman/bin/sdkman-init.sh"
 sudo sdk install java 11.0.8.hs-adpt
 echo "Install JDK 11 ... succesfull"
 
