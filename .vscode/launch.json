@@ -1,0 +1,10 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "request": "attach",
+            "name": "Java Attach PID",
+            "processId": "${command:PickJavaProcess}"
+        },
+    ]
+}
