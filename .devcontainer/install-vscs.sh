@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Install Linux Tools
-sudo apt-get install htop less chromium-browser
+sudo apt-get install htop less chromium
 export CHROME_BIN=/usr/bin/chromium-browser
 
 # Install SDK MAN
