@@ -49,5 +49,6 @@ echo "Install K3D ... succesfull"
 # Install Angular CLI
 npm install -g @angular/cli
 
-# Create default dir
-mkdir ~/workspace/repos
+# Disbale dev git repos 
+mv .git .git.disbaled
+
