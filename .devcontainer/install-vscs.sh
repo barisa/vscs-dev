@@ -17,7 +17,7 @@ echo "Install SDK MAN ... succesfull"
 echo ""
 echo "-----------------------------------"
 echo "Install JDK 11 ..."
-exec bash
+source "/home/codespace/.sdkman/bin/sdkman-init.sh"
 sdk install java 11.0.8.hs-adpt
 echo "Install JDK 11 ... succesfull"
 
