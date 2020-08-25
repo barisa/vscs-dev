@@ -12,7 +12,7 @@ echo ""
 
 # Install Linux Tools
 sudo apt-get -y install htop less chromium
-export CHROME_BIN=/usr/bin/chromium-browser
+echo "export CHROME_BIN=/usr/bin/chromium-browser" >> ~/.bashrc
 
 # Install SDK MAN
 echo ""
