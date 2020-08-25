@@ -1,10 +1,14 @@
 #!/bin/bash
 
+echo "-----------------------------------"
 echo "Running as ..."
+echo "#########################"
 id -u -n
 
 echo "Current pwd ..."
 pwd
+echo "#########################"
+echo ""
 
 # Install Linux Tools
 sudo apt-get -y install htop less chromium
