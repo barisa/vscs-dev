@@ -21,9 +21,15 @@
 		"mongodb.mongodb-vscode"
 	],
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	"forwardPorts": [],
+	"forwardPorts": [
+	4200, // Angular
+	9876, // Angular test
+	8000, //Spring Boot
+	8080, // Spring Boot
+	27017 // MongoDB
+	],
 	// Use 'postCreateCommand' to run commands after the container is created.
-	//"postCreateCommand": "sh ~/workspace/.devcontainer/install-vscs.sh
+	"postCreateCommand": "sh ./install-vscs.sh
 	// Uncomment to connect as a non-root user. See https://aka.ms/vscode-remote/containers/non-root.
 	"remoteUser": "vscode"
 }
