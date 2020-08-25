@@ -1,7 +1,8 @@
 #!/bin/bash
 
 # Install Linux Tools
-sudo apt-get install htop less
+sudo apt-get install htop less chromium-browser
+export CHROME_BIN=/usr/bin/chromium-browser
 
 # Install SDK MAN
 echo ""
@@ -16,6 +17,7 @@ echo "Install SDK MAN ... succesfull"
 echo ""
 echo "-----------------------------------"
 echo "Install JDK 11 ..."
+exec bash
 sdk install java 11.0.8.hs-adpt
 echo "Install JDK 11 ... succesfull"
 
