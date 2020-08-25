@@ -11,7 +11,7 @@ echo "#########################"
 echo ""
 
 # Install Linux Tools
-sudo apt-get -y install htop less chromium
+# sudo apt-get -y install htop less chromium
 export CHROME_BIN=/usr/bin/chromium-browser
 
 # Install SDK MAN
@@ -20,15 +20,14 @@ echo "-----------------------------------"
 echo "Install SDK MAN ..."
 
 curl -s "https://get.sdkman.io" | bash
-source "$HOME/.sdkman/bin/sdkman-init.sh"
+sh ./home/codespace/.sdkman/bin/sdkman-init.sh
 echo "Install SDK MAN ... succesfull"
 
 # Install JDK 11
 echo ""
 echo "-----------------------------------"
 echo "Install JDK 11 ..."
-source "/home/codespace/.sdkman/bin/sdkman-init.sh"
-sudo sdk install java 11.0.8.hs-adpt
+sdk install java 11.0.8.hs-adpt
 echo "Install JDK 11 ... succesfull"
 
 # Install Docker-Compose
