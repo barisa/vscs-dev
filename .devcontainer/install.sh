@@ -64,3 +64,5 @@ npm install -g @angular/cli
 
 
 echo "Install VSCS finished"
+
+sudo reboot
