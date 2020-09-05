@@ -5,7 +5,16 @@
 		"terminal.integrated.shell.linux": "/bin/bash",
 		"java.format.settings.url": "https://raw.githubusercontent.com/google/styleguide/gh-pages/eclipse-java-google-style.xml",
 		"java.format.settings.profile": "GoogleStyle",
+		"java.semanticHighlighting.enabled": true,
+		"java.saveActions.organizeImports": true,
+		"java.refactor.renameFromFileExplorer": "autoApply",
 		"git.autofetch": true,
+		"editor.formatOnSave": true,
+		"editor.minimap.enabled": false,
+		"editor.quickSuggestions": {
+			"strings": true
+	    	},
+		"editor.tabSize": 2,
 		"files.exclude": {
 			"**/.classpath": true,
 			"**/.project": true,
@@ -18,15 +27,18 @@
 		"vscjava.vscode-java-pack",
 		"pivotal.vscode-boot-dev-pack",
 		"gabrielbb.vscode-lombok",
-		"mongodb.mongodb-vscode"
+		"mongodb.mongodb-vscode",
+		"oderwat.indent-rainbow",
+		"2gua.rainbow-brackets"
 	],
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	"forwardPorts": [
 	4200, // Angular
 	9876, // Angular test
-	8000, //Spring Boot
-	8080, // Spring Boot
-	27017 // MongoDB
+	8000, // HTTP / Spring Boot
+	8080, // HTTP / Spring Boot
+	27017, // MongoDB
+	5432, // Postgres
 	],
 	// Use 'postCreateCommand' to run commands after the container is created.
 	//"postCreateCommand": "bash .devcontainer/install-vscs.sh",
