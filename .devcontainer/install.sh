@@ -2,5 +2,7 @@
 
 git clone https://github.com/barisa/vscs-dev.git .
 
-sh ./.devcontainer/install-vscs.sh
+chmod +x .devcontainer/install-vscs.sh
+bash .devcontainer/install-vscs.sh
+
 sudo reboot
